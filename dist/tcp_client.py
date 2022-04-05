@@ -1,3 +1,7 @@
+# Author: Masrik Dahir
+# Date: 2021-05-04
+
+
 import socket
 server_name = '127.0.0.1'
 server_port = 12001

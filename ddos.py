@@ -1,3 +1,6 @@
+# Author: Masrik Dahir
+# Date: 2021-05-04
+
 import socket
 import threading
 

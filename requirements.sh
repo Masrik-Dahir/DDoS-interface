@@ -1,3 +1,6 @@
+# Author: Masrik Dahir
+# Date: 2021-05-04
+
 pip install --upgrade pip
 pip install wxpython
 pip install cryptography
