@@ -9,7 +9,7 @@ server_name = '127.0.0.1'
 server_port = 12001
 
 # create a socket object
-t = []
+t = [0]
 p = [0]
 while True:
     start = time.time()
