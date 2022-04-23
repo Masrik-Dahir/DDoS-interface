@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import new
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -273,6 +273,12 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        if str(self.comboBox_3.currentText()) == "Layer 4":
+            self.comboBox_2.hide()
+            self.lineEdit_6.hide()
+
+        self.pushButton.clicked.connect(self.action)
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "DDoS Interface"))
@@ -298,6 +304,23 @@ class Ui_MainWindow(object):
         self.comboBox.setItemText(2, _translate("MainWindow", "SOCKS4"))
         self.comboBox.setItemText(3, _translate("MainWindow", "SOCKS5"))
         self.comboBox.setItemText(4, _translate("MainWindow", "RANDOM"))
+
+    def action(self):
+        protocol = str(self.comboBox_5.currentText())
+        thread = str(self.lineEdit_2.text())
+        second = str(self.lineEdit_4.text())
+        ip = str(self.lineEdit.text())
+        port = str(self.lineEdit_3.text())
+        socket = str(self.comboBox.currentText())
+
+        option = {"ALL": 0,
+                  "HTTP": 1,
+                  "SOCKS4": 4,
+                  "SOCKS5": 5,
+                  "RANDOM": 6}
+
+        new.layer_4(protocol, ip, port, thread, second, str(option[socket]))
+
 
 
 if __name__ == "__main__":

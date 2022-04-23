@@ -43,7 +43,7 @@ class MainWindow(QtWidgets.QMainWindow):
         start = time.time()
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client.connect((server_name, server_port))
-        sentence = "None"
+        sentence = "Normal Client"
         client.send(sentence.encode())
         modifiedSentence = client.recvfrom(2048)
         print(modifiedSentence[0].decode())
