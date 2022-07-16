@@ -5,7 +5,7 @@
 
 Author: Masrik Dahir, Vivian Nguyen
 
-The DDoS interface is a penetration testing tool. The interface can conduct DDoS attack to Aplication layer and Treanport layer. It's a class project for VCU CMSC 414: COMPUTER & NETWORK SECURITY. 
+The DDoS interface is a penetration testing tool. The interface can conduct DDoS attack to Application layer and Transport layer. It's a class project for VCU CMSC 414: COMPUTER & NETWORK SECURITY. 
 
 [DDoS Interface.pdf](https://github.com/Masrik-Dahir/DDoS_interface/files/9125112/DDoS.Interface.pdf)
 
